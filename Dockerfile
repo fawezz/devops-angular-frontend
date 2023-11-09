@@ -12,7 +12,7 @@ RUN npm run build
 
 FROM nginx:1.21.1-alpine
 
-COPY --from=build /app/dist/SummerWorkshop_Angular /usr/share/nginx/html
+COPY --from=build /app/dist/summer-workshop-angular /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
