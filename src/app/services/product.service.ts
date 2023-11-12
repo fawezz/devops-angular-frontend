@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'http://192.168.33.10:8082'; 
+  private apiUrl = 'http://192.168.33.10:8082/SpringMVC'; 
 
   constructor(private http: HttpClient) { }
 
